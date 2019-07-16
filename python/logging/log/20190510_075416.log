@@ -1,0 +1,16 @@
+2019-05-10 07:54:16,880 - main.py:31 [DEBUG] Assigned values num1=40 and num2=0
+2019-05-10 07:54:16,880 - functions.py:7 [INFO] Adding 40 and 0
+2019-05-10 07:54:16,881 - functions.py:13 [INFO] Subtracting 0 from error
+2019-05-10 07:54:16,881 - functions.py:16 [ERROR] Unable to subtract 0 from error
+Traceback (most recent call last):
+  File "C:\Users\alejandro.apodaca\Desktop\batch\logging\functions.py", line 14, in subtract
+    return x - y
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+2019-05-10 07:54:16,881 - functions.py:20 [INFO] Multiplying 40 and 0
+2019-05-10 07:54:16,881 - functions.py:26 [INFO] Dividing 40 by 0
+2019-05-10 07:54:16,882 - functions.py:29 [ERROR] Attempted to divide by zero
+Traceback (most recent call last):
+  File "C:\Users\alejandro.apodaca\Desktop\batch\logging\functions.py", line 27, in divide
+    return x // y
+ZeroDivisionError: integer division or modulo by zero
+2019-05-10 07:54:16,882 - main.py:38 [DEBUG] End of main.py

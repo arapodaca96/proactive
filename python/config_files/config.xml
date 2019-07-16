@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding = "utf-8"?>
+
+<root>
+
+	<build>
+		<param1>val 1</param1>
+		<param2>val 2</param2>
+		<param3>val 3</param3>
+		<param4>val 4</param4>
+		<param5>val 5</param5>
+	</build>
+		
+	<component>
+		<name>hud</name>
+		<location>location 1</location>
+		<destination>destination 1</destination>
+		<msbuild>
+			<type>type 1</type>
+			<config>config 1</config>
+			<arch>arch 1</arch>
+		</msbuild>
+	</component>
+	
+	<component>
+		<name>ios</name>
+		<location>location 2</location>
+		<destination>destination 2</destination>
+		<msbuild>
+			<type>type 2</type>
+			<config>config 2</config>
+			<arch>arch 2</arch>
+		</msbuild>
+	</component>
+	
+	<component>
+		<name>nmfcd</name>
+		<location>location 3</location>
+		<destination>destination 3</destination>
+		<msbuild>
+			<type>type 3</type>
+			<config>config 3</config>
+			<arch>arch 3</arch>
+		</msbuild>
+	</component>
+
+	<component>
+		<name>simhost</name>
+		<location>location</location>
+	</component>
+	
+<! -- 
+'keep' contains files whose extension is listed under 'remove' but we  
+don't want to remove (e.g. remove all .txt files except for file.txt)
+-- >
+
+	<cleanup>
+	<keep>
+		<file>keep_this_file.txt<file>
+		<file>keep_this.png<file>
+	</keep>
+	<remove>
+		<ext>.txt</ext>
+		<ext>.png</ext>
+		<ext>.jpg</ext>
+	</remove>
+	</cleanup>
+	
+</root>
